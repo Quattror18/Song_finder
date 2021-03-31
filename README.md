@@ -5,7 +5,7 @@ Finds spotify song and it's corresponding genius page
 
 <genius_client_token> is from an api client from https://genius.com/api-clients
 
-The AutoHotKey script runs the python script where it is located with 'right control' + '.'
+The AutoHotKey script runs the python script where it is located with "right control" + "."
 
 Searchs genius in the format: '<song_name> <primary_artist>'
 
