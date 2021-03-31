@@ -1,2 +1,2 @@
 ﻿>^.::
-RunWait C:\Users\ryleb\source\repos\song_finder\song_finder\song_finder.pyw
+RunWait C:\py_projects\song_finder.pyw
