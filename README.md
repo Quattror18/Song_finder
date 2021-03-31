@@ -16,7 +16,7 @@ Libraries used:
     json
     webbrowser
 
-edit song_finder.py to enter your Spotify and Genius app credentials
+edit song_finder.pyw to enter your Spotify and Genius app credentials
 
     SPOTIPY_CLIENT_ID = 'your_client_id'
     SPOTIPY_CLIENT_SECRET = 'your_client_secret'
