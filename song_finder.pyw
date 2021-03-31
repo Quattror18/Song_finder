@@ -9,6 +9,7 @@ import webbrowser
 PORT_NUMBER = 8080
 SPOTIPY_CLIENT_ID = ''
 SPOTIPY_CLIENT_SECRET = ''
+genius_client_token = ''
 REDIRECT_URI = 'http://localhost:8080'
 SCOPE = 'user-read-playback-state'
 CACHE = '.spotipyoauthcache'
@@ -97,7 +98,7 @@ def spotify():
 #does the genius api search
 def genius(query, artists):
 
-    genius_client_token = ''
+    
     genius_base_url = 'https://api.genius.com'
 
     request_url = genius_base_url + '/search/'
