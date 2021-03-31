@@ -14,11 +14,7 @@ Url should be opened on primary browser.
 In cases where a match is not found, a genius not found page is opened.
 
 Libraries used:
-
 spotipy
-
 requests
-
 json
-
 webbrowser
