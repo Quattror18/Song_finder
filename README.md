@@ -6,7 +6,6 @@ The AutoHotKey script runs the python script where it is located with "right con
 Searchs genius in the format: '<song_name> <primary_artist>'
 
 Result is considered to be correct if the artist on genius matches one listed from spotify.
-Url should be opened on primary browser.
 In cases where a match is not found, a genius not found page is opened.
 
 Libraries used:
