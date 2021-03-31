@@ -34,11 +34,17 @@ def remaster_remove(song_name):
     return song_name
 
 #replaces 'and' with '&'
-#because Blur's Girls and boys on spotify is Girls & Boys on genius
+#because Blur's 'girls and boys' on spotify is 'Girls & Boys' on genius
 def and_replace(song_name):
     new_name = song_name.replace('and', '&')
     
     return(new_name)
+
+def genius_name_2(name):
+    idx = name.rfind('/')
+    name2 = name[idx+1:len(name)]
+    name2 = name2.lower()
+    return name2
 
 #identifies the currently playing song and artist(s)
 def spotify():
@@ -90,8 +96,6 @@ def spotify():
                     stop = True
                     webbrowser.open(url)
 
-
-
     else:
         print("Can't get token for", username)
 
@@ -118,8 +122,11 @@ def genius(query, artists):
     for hit in r['response']['hits']:
         song_name = hit['result']['title']
         primary_artist_name = hit['result']['primary_artist']['name']
+        primary_artist_name = primary_artist_name.lower()
         
-
+        primary_artist_name_two = hit['result']['primary_artist']['url']
+        primary_artist_name_two = genius_name_2(primary_artist_two)
+        
         same_artist = False
         for name in artists:
             if name == primary_artist_name:
